@@ -11,7 +11,7 @@ namespace DesignPatterns
     {
         public void Fly()
         {
-            Console.WriteLine("I'm flying");
+            Console.WriteLine("I'm flying!!");
         }
     }
 
@@ -19,7 +19,15 @@ namespace DesignPatterns
     {
         public void Fly()
         {
-            Console.WriteLine("I can't fly");
+            Console.WriteLine("I can't fly!");
+        }
+    }
+
+    public class FlyRocketPowered : IFlyBehaviour
+    {
+        public void Fly()
+        {
+            Console.WriteLine("I'm flying with a rocket!");
         }
     }
 }
