@@ -14,14 +14,14 @@ namespace Chapter5_Singleton
             Console.WriteLine("Hello, world!");
         }
 
-        private static Singleton _instance;
+        private static Singleton _instance = new Singleton();
 
         public static Singleton GetInstance()
         {
-            if (_instance == null)
-            {
-                _instance = new Singleton();
-            }
+            //if (_instance == null)
+            //{
+            //    _instance = new Singleton();
+            //}
 
             return _instance;
         }
