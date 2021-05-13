@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter9_Iterator", "Chapte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter10_State", "Chapter10_State\Chapter10_State.csproj", "{94EF4E13-75D5-4DED-8D5A-5406F66B0462}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter11_Proxy", "Chapter11_Proxy\Chapter11_Proxy.csproj", "{CE7D0E43-7537-4A8C-A69A-184010A14FE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{94EF4E13-75D5-4DED-8D5A-5406F66B0462}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94EF4E13-75D5-4DED-8D5A-5406F66B0462}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94EF4E13-75D5-4DED-8D5A-5406F66B0462}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE7D0E43-7537-4A8C-A69A-184010A14FE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE7D0E43-7537-4A8C-A69A-184010A14FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE7D0E43-7537-4A8C-A69A-184010A14FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE7D0E43-7537-4A8C-A69A-184010A14FE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

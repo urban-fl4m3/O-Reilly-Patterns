@@ -95,6 +95,11 @@ namespace Chapter10_State
             return _winnerState;
         }
 
+        public IState GetState()
+        {
+            return _state;
+        }
+
         public string GetLocation()
         {
             return _location;
