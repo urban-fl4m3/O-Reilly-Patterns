@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FacadeInterfaces.cs" />
+    <Compile Include="HomeTheaterFacade.cs" />
     <Compile Include="IDuck.cs" />
     <Compile Include="ITurkey.cs" />
     <Compile Include="MallardDuck.cs" />
