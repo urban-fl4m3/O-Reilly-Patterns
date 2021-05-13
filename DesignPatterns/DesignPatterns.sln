@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter7_Adapter_Facade", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter8_TemplateMethod", "Chapter8_TemplateMethod\Chapter8_TemplateMethod.csproj", "{BDF3217A-588F-4B88-BFDD-662988131C71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter9_Iterator", "Chapter9_Iterator\Chapter9_Iterator.csproj", "{06B3DB5A-AF28-44CB-915E-F80CDE270ED0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{BDF3217A-588F-4B88-BFDD-662988131C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDF3217A-588F-4B88-BFDD-662988131C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDF3217A-588F-4B88-BFDD-662988131C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06B3DB5A-AF28-44CB-915E-F80CDE270ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06B3DB5A-AF28-44CB-915E-F80CDE270ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06B3DB5A-AF28-44CB-915E-F80CDE270ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06B3DB5A-AF28-44CB-915E-F80CDE270ED0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
