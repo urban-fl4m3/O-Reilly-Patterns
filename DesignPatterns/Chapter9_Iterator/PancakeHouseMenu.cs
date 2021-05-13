@@ -2,11 +2,11 @@
 
 namespace Chapter9_Iterator
 {
-    public class PancakeHouseMenu : IIterable
+    public class PancakeHouseMenu : Menu
     {
         private readonly List<MenuItem> _items = new List<MenuItem>();
 
-        public PancakeHouseMenu()
+        public PancakeHouseMenu() : base("", "")
         {
             AddItem("K&B's Pancake Breakfast",
                 "Pancakes with scrambled eggs, and toast",

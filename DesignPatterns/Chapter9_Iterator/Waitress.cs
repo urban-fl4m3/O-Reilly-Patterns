@@ -4,31 +4,36 @@ namespace Chapter9_Iterator
 {
     public class Waitress
     {
-        private readonly IIterable _pancakeHouseMenu;
-        private readonly IIterable _dinerMenu;
+        MenuComponent _allMenus;
 
-        public Waitress(IIterable pancakeHouseMenu, IIterable dinerMenu)
+        public Waitress(MenuComponent menus)
         {
-            _pancakeHouseMenu = pancakeHouseMenu;
-            _dinerMenu = dinerMenu;
+            _allMenus = menus;
         }
 
         public void PrintMenu()
         {
-            IIterator dinerIterator = _dinerMenu.CreateIterator();
-            IIterator pancakeIterator = _pancakeHouseMenu.CreateIterator();
-            Console.WriteLine("MENU\n----\nBREAKFAST");
-            PrintMenu(pancakeIterator);
-            Console.WriteLine("\nLUNCH");
-            PrintMenu(dinerIterator);
+            _allMenus.Print();
         }
 
-        private void PrintMenu(IIterator iterator)
+        public void PrintVegetarianMenu()
         {
-            while (iterator.HasNext())
+            var iterator = _allMenus.CreateIterator();
+            Console.WriteLine("\nVEGETARIAN MENU\n----");
+            while (iterator.MoveNext())
             {
-                MenuItem menuItem = (MenuItem)iterator.Next();
-                Console.WriteLine($"{menuItem.Name}, {menuItem.Price} -- {menuItem.Description}");
+                var component = iterator.Current;
+                try
+                {
+                    if (component != null && component.IsVegeterian())
+                    {
+                        component.Print();
+                    }
+                }
+                catch 
+                {
+
+                }
             }
         }
     }

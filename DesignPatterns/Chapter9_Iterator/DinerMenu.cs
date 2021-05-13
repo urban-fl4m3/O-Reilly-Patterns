@@ -2,13 +2,13 @@
 
 namespace Chapter9_Iterator
 {
-    public class DinerMenu : IIterable
+    public class DinerMenu : Menu
     {
         private const int _maxCount = 4;
         private int _numberOfItems = 0;
         private readonly MenuItem[] _items;
 
-        public DinerMenu()
+        public DinerMenu() : base("Diner menu", "Diner")
         {
             _items = new MenuItem[_maxCount];
 
